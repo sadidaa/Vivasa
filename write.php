@@ -2,14 +2,14 @@
 <body>
 
 <?php
-	/*$kind = $_GET['kind'];
+	$kind = $_GET['kind'];
     $lat = $_GET['lat'];
     $longi = $_GET['longi'];
     $avrat = $_GET['rating'];
     $review = $_GET['review'];
     $noofrat = $_GET['noofrat'];
     $noofacc = $_GET['noofacc'];
-
+/*
     $con=mysqli("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
     $sql = "insert into vivasa values(".$kind.",".$lat.",".$longi.",".$avrat.","."\"".$review."\",".$noofrat",".$noofacc.");";
     $sql2 = "select (*) from vivasa;";
