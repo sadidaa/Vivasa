@@ -13,7 +13,7 @@
     $con=mysqli_connect("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
     //$sql = "insert into vivasa values((int)$kind,(float)$lat,(float)$longi,(float)$avrat,$review,(int)$noofrat,(int)$noofacc);";
 	$a = "adwadawd";
-	$sql = "insert into vivasa values(2,3,4,5,232,4,3);";
+	$sql = "insert into vivasa values(2,3,4,5,$a,4,3);";
 	$sql2 = "select count(*) from vivasa;";
 		//dawdwa
 	//$temp = mysqli_query($con);	
@@ -34,7 +34,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '1';
+	echo '2';
 	echo $review;
 	mysqli_close($con);
 ?>
