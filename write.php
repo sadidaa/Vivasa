@@ -2,7 +2,7 @@
 <body>
 
 <?php
-	$kind = $_GET['kind'];
+    $kind = $_GET['kind'];
     $lat = $_GET['lat'];
     $longi = $_GET['longi'];
     $avrat = $_GET['rating'];
@@ -15,8 +15,8 @@
     $sql2 = "select count(*) from vivasa;";
 		
 	//$temp = mysqli_query($con);	
-	$store = mysqli_query($con,$sql);
-		$store = mysqli_query($sql2);
+	$store1 = mysqli_query($con,$sql);
+	$store = mysqli_query($sql2);
 	$row = mysqli_fetch_row($store);
 	echo $row[0];
     /*if($con->query($sql) === TRUE){
@@ -29,7 +29,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '2';
+	echo '1';
 	echo $review;
 ?>
 
