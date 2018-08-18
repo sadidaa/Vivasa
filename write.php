@@ -10,15 +10,19 @@
     $noofrat = $_GET['noofrat'];
     $noofacc = $_GET['noofacc'];
 
-    $con=mysqli_connect("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
-    $sql = "insert into vivasa values($kind,$lat,$longi,$avrat,\"$review\",$noofrat,$noofacc);";
+    $con=mysqli("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
+    $sql = "insert into vivasa values(".$kind.",".$lat.",".$longi.",".$avrat.","."\"".$review."\",".$noofrat",".$noofacc.");";
     $sql2 = "select (*) from vivasa;";
-    mysqli_query($con,$sql);
+    if($con->$sql === TRUE){
+        echo "Succes\n";
+    }else{
+        echo "Fail\n";
+    }
     //echo mysqli_query($con,$sql2);
 
-    echo $lat;
+    //echo $lat;
 
-    echo "Wrote to database \n\n";
+   // echo "Wrote to database \n\n";
 ?>
 </body>
 </html>
