@@ -17,7 +17,7 @@
 	$sql2 = "select count(*) from vivasa;";
 		//dawdwa
 	//$temp = mysqli_query($con);	
-	$store = mysqli_query($con,$sql2);
+	$store = mysqli_query($con,$sql);
 	$store1 = mysqli_query($con,$sql2);
 	if (!$store){
 		echo 'fail';
