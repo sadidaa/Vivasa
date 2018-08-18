@@ -27,6 +27,7 @@
 
    // echo "Wrote to database \n\n";*/
 	echo 'helloolloeeo';
+	echo $kind;
 ?>
 	hohooho
 </body>
