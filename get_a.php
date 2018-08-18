@@ -2,12 +2,7 @@
 <body>
 
 <?php
-	$kind = $_GET('kind');
-
-
-
-
-    echo $kind;
+	echo "dawdwadw";
 ?>
 </body>
 </html>
