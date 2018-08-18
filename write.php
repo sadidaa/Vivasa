@@ -26,6 +26,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";
+	echo 'helloolloeeo';
 ?>
 </body>
 </html>
