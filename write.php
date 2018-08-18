@@ -9,10 +9,10 @@
     $review = $_GET['review'];
     $noofrat = $_GET['noofrat'];
     $noofacc = $_GET['noofacc'];
-/*
+
     $con=mysqli("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
-    $sql = "insert into vivasa values(".$kind.",".$lat.",".$longi.",".$avrat.","."\"".$review."\",".$noofrat",".$noofacc.");";
-    $sql2 = "select (*) from vivasa;";
+    //$sql = "insert into vivasa values(".$kind.",".$lat.",".$longi.",".$avrat.","."\"".$review."\",".$noofrat",".$noofacc.");";
+    //$sql2 = "select (*) from vivasa;";
 		
 		
 	
@@ -29,6 +29,6 @@
 	echo 'helloolloeeo';
 	echo $kind;
 ?>
-	hohooho
+
 </body>
 </html>
