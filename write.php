@@ -33,7 +33,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '2';
+	echo '1';
 	echo $review;
 ?>
 
