@@ -16,9 +16,9 @@
 	$sql2 = "select count(*) from vivasa;";
 		//dawdwa
 	//$temp = mysqli_query($con);	
-	$store = mysqli_query($con,$sql2);
+	$store = mysqli_query($con,$sql);
 	$store1 = mysqli_query($con,$sql2);
-	if (!$store1){
+	if (!$store){
 		echo 'fail';
 	}
 	$row = mysqli_fetch_row($store1);
@@ -33,7 +33,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '2';
+	echo '1';
 	echo $review;
 ?>
 
