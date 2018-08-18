@@ -12,7 +12,7 @@
 
     $con=mysqli_connect("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
     $sql = mysqli_connect("insert into vivasa values($kind,$lat,$longi,$avrat,$review,$noofrat,$noofacc);");
-
+    $sql2 = mysqli_connect("select (*) from vivasa;");
     mysqli_query($con,$sql);
 
     echo $lat;
