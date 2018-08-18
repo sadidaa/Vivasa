@@ -26,7 +26,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo 'helloolloeeo';
+	echo '1';
 	echo $kind;
 ?>
 
