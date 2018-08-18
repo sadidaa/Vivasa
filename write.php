@@ -14,7 +14,7 @@
     $sql = "insert into vivasa values($kind,$lat,$longi,$avrat,'$review',$noofrat,$noofacc);";
     $sql2 = "select (*) from vivasa;";
 		
-	mysqli_query($con);	
+	mysqli_query($con,$sql,$sql2);	
 	
     /*if($con->query($sql) === TRUE){
         echo "Succes\n";
@@ -26,7 +26,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '2';
+	echo '1';
 	echo $kind;
 ?>
 
