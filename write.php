@@ -16,6 +16,7 @@
     mysqli_query($con,$sql);
 
     echo $lat;
+    echo $longi;
 
     echo "Wrote to database \n\n";
 ?>
