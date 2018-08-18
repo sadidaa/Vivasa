@@ -11,10 +11,10 @@
     $noofacc = $_GET['noofacc'];
 
     $con=mysqli_connect("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
-    $sql = "insert into vivasa values($kind,$lat,$longi,$avrat,$review,$noofrat,$noofacc);";
+    //$sql = "insert into vivasa values($kind,$lat,$longi,$avrat,$review,$noofrat,$noofacc);";
     $sql2 = "select count(*) from vivasa;";
 		
-	mysqli_query($con,$sql);	
+	$temp = mysqli_query($con);	
 	$store = mysqli_query($sql2);
 	$row = mysqli_fetch_row($store);
 	echo $row[0];
@@ -28,7 +28,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '2';
+	echo '1';
 	echo $kind;
 ?>
 
