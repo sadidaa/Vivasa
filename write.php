@@ -15,7 +15,8 @@
     $sql2 = "select count(*) from vivasa;";
 		
 	//$temp = mysqli_query($con);	
-	$store = mysqli_query($con,$sql2);
+	$store = mysqli_query($con,$sql);
+		$store = ($sql2);
 	$row = mysqli_fetch_row($store);
 	echo $row[0];
     /*if($con->query($sql) === TRUE){
