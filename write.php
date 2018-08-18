@@ -20,9 +20,9 @@
 	if (!$store1){
 		echo 'fail';
 	}
-	/*$store = mysqli_query($con,$sql2);
+	$store1 = mysqli_query($con,$sql2);
 	$row = mysqli_fetch_row($store);
-	echo $row[0];*/
+	echo $row[0];
     /*if($con->query($sql) === TRUE){
         echo "Succes\n";
     }else{
