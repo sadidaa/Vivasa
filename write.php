@@ -20,8 +20,7 @@
 	if (!$store1){
 		echo 'fail';
 	}
-	$store1 = mysqli_query($con,$sql2);
-	$row = mysqli_fetch_row($store);
+	$row = mysqli_fetch_row($store1);
 	echo $row[0];
     /*if($con->query($sql) === TRUE){
         echo "Succes\n";
@@ -33,7 +32,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '1';
+	echo '2';
 	echo $review;
 ?>
 
