@@ -2,9 +2,8 @@
 <body>
 
 <?php
-echo $_GET('kind');
+echo $_GET['a'];
    
 ?>
-	\n dawdadaedw
 </body>
 </html>
