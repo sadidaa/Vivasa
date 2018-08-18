@@ -16,7 +16,7 @@
 		
 	//$temp = mysqli_query($con);	
 	$store = mysqli_query($con,$sql);
-		$store = ($sql2);
+		$store = mysqli_query($sql2);
 	$row = mysqli_fetch_row($store);
 	echo $row[0];
     /*if($con->query($sql) === TRUE){
@@ -29,7 +29,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '1';
+	echo '2';
 	echo $review;
 ?>
 
