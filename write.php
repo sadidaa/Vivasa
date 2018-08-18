@@ -11,7 +11,7 @@
     $noofacc = $_GET['noofacc'];
 
     $con=mysqli_connect("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
-    $sql = "insert into vivasa values(".$kind.",".$lat.",".$longi.",".$avrat.","."\"".$review."\",".$noofrat",".$noofacc.");";
+    $sql = "insert into vivasa values($kind,$lat,$longi,$avrat,'$review',$noofrat,$noofacc);";
     $sql2 = "select (*) from vivasa;";
 		
 		
