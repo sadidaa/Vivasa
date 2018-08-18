@@ -17,6 +17,7 @@
 		//dawdwa
 	//$temp = mysqli_query($con);	
 	$store1 = mysqli_query($con,$sql2);
+	$store = mysqli_query($con,$sql2);
 	if (!$store1){
 		echo 'fail';
 	}
@@ -32,7 +33,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '2';
+	echo '1';
 	echo $review;
 ?>
 
