@@ -2,7 +2,7 @@
 <body>
 
 <?php
-	$kind = $_GET['kind'];
+	/*$kind = $_GET['kind'];
     $lat = $_GET['lat'];
     $longi = $_GET['longi'];
     $avrat = $_GET['rating'];
@@ -25,7 +25,7 @@
 
     //echo $lat;
 
-   // echo "Wrote to database \n\n";
+   // echo "Wrote to database \n\n";*/
 	echo 'helloolloeeo';
 ?>
 	hohooho
