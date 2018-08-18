@@ -10,12 +10,14 @@
     $noofrat = $_GET['noofrat'];
     $noofacc = $_GET['noofacc'];
 
-    $con=new mysqli("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
-    $sql = "insert into vivasa values($kind,$lat,$longi,$avrat,'$review',$noofrat,$noofacc);";
-    $sql2 = "select (*) from vivasa;";
+    $con=mysqli_connect("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
+    $sql = "insert into vivasa values($kind,$lat,$longi,$avrat,$review,$noofrat,$noofacc);";
+    $sql2 = "select count(*) from vivasa;";
 		
-	mysqli_query($con,$sql,$sql2);	
-	
+	mysqli_query($con,$sql);	
+	$store = mysqli_query($sql2);
+	$row = mysqli_fetch_row($store);
+	echo $row[0];
     /*if($con->query($sql) === TRUE){
         echo "Succes\n";
     }else{
@@ -26,7 +28,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '1';
+	echo '2';
 	echo $kind;
 ?>
 
