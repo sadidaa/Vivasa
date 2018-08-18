@@ -29,7 +29,7 @@
 
    // echo "Wrote to database \n\n";*/
 	echo '1';
-	echo $kind;
+	echo $review;
 ?>
 
 </body>
