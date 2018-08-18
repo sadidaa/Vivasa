@@ -1,8 +1,5 @@
 <html>
 <body>
-<?php
-echo "dawdwda \n";
-?>
  <!-- <?php
    $con=mysqli_connect("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
    $sql="CREATE TABLE table1(Username CHAR(30),Password CHAR(30),Role CHAR(30))";
