@@ -10,9 +10,8 @@ class entity{
   public $review = "";
   public $noofrate = 0;
   public $noofacc = 0;
-  
-  
 }
+  
   function convert($arr)
   {
     $obj = new entity();
@@ -44,7 +43,7 @@ $obj = new entity();
   
   for($x = 0;$x < $count;$x++)
   {
-   $obj = convert(row[$x]);
+   $obj = convert($row[$x]);
   echo json_encode($obj),"\n";
   }
   
