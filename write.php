@@ -15,7 +15,7 @@
 	$a = "ooo";
 	
 	//The following works
-	$sql = "insert into vivasa values(2,3,4,5,$kind,4,3);";
+	$sql = "insert into vivasa values(2,3,4,5,(int)$kind,4,3);";
 	
 	$sql2 = "select count(*) from vivasa;";
 		//dawdwa
@@ -37,7 +37,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '1';
+	echo '2';
 	echo $review;
 	mysqli_close($con);
 	echo gettype($kind);
