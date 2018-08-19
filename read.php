@@ -41,12 +41,10 @@ $obj = new entity();
   	$out = mysqli_query($con,$sql);
   	$row = mysqli_fetch_row($out);
   
-  for($x = 0;$x < $count;$x++)
-  {/*
-   $obj = convert($row[][$x]);
-  echo json_encode($obj),"\n";*/
-    echo $row[$x];
-  }
+    while($x = mysql_fetch_array($row, MYSQL_ASSOC)) {
+     $obj = convert($x);
+      echo json_encode($obj);
+   }
   
   //echo json_encode($obj);
 echo "2";
