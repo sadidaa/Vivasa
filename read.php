@@ -12,7 +12,7 @@ class entity{
   public $noofacc = 0;
 }
   
-  function convert($arr)
+ /* function convert($arr)
   {
     $obj = new entity();
     $obj->kind = {$arr['kind']};
@@ -23,7 +23,7 @@ class entity{
     $obj->noofrate = {$arr['noofrating']};
     $obj->noofacc = {$arr['no.of.acc']};
     return $obj;
-  }
+  }*/
   
 $lat = $_GET['lat'];
 $longi = $_GET['longi'];
