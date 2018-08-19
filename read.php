@@ -32,7 +32,7 @@ $obj = new entity();
   
  $con=mysqli_connect("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
   $sql = "select * from vivasa";
-  $sql2 = "select count(*) from vivasa";
+  $sql2 = "select count(*) from vivasa;";
   
   $temp = mysqli_query($con,$sql2);
   $counta = mysqli_fetch_row($temp);
@@ -48,7 +48,7 @@ $obj = new entity();
   }
   
   //echo json_encode($obj);
-echo "2";
+echo "1";
   //echo $count;
 
 
