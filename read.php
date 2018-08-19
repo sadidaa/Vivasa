@@ -39,25 +39,25 @@ $obj = new entity();
   $count = $counta[0];
   
   	$out = mysqli_query($con,$sql);
-  $out2 = mysqli_query($con,$sql);
+  /*$out2 = mysqli_query($con,$sql);
   $out2 = mysqli_query($con,$sql);
   	$row = mysqli_fetch_row($out);
   $row2 = mysqli_fetch_row($out);
-  echo $row2[4];
+  echo $row2[4];*/
   
-  /*
-    while($x = mysqli_fetch_array($out, MYSQL_ASSOC)) {
+  
+    while($x = mysqli_fetch_array($out)) {
      //$obj = convert($x);
       //echo json_encode($obj);
-    echo $x[0][0];
-    }*/
+    echo $x[4];
+    }
   /*
   $y = mysqli_fetch_array($out);
   $r = mysqli_fetch_array($($y[0]));
   echo $r;
   */
   //echo json_encode($obj);
-echo "2";
+echo "5";
   echo $count;
 
 
