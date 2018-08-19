@@ -18,10 +18,10 @@ class entity{
     $obj->kind = $arr['kind'];
     $obj->lat = $arr['lat'];
     $obj->longi = $arr['longi'];
-    $obj->avrat = $arr[3];
-    $obj->review = $arr[4];
-    $obj->noofrate = $arr[5];
-    $obj->noofacc = $arr[6];
+    $obj->avrat = $arr['avrat'];
+    $obj->review = $arr['review'];
+    $obj->noofrate = $arr['noofrating'];
+    $obj->noofacc = $arr['no.of.acc'];
     return $obj;
   }
   
