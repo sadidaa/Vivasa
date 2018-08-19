@@ -30,14 +30,14 @@ $obj = new entity();
   $counta = mysqli_fetch_row($temp);
   $count = $counta[0];
   
-  	/*$out = mysqli_query($con,$sql);
-  	$row = mysqli_fetch_row($out);*/
+  	$out = mysqli_query($con,$sql);
+  	$row = mysqli_fetch_row($out);
   
   
   
   
   echo json_encode($obj);
-echo "2";
+echo "1";
   echo $count;
 
 
