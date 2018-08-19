@@ -13,17 +13,17 @@ class entity{
   
   
 }
-  function convert(arr)
+  function convert(&arr)
   {
     $obj = new entity();
-    obj->kind = arr[0];
-    obj->lat = arr[1];
-    obj->longi = arr[2];
-    obj->avrat = arr[3];
-    obj->review = arr[4];
-    obj->noofrate = arr[5];
-    obj->boofacc = arr[6];
-    return obj;
+    $obj->kind = &arr[0];
+    $obj->lat = &arr[1];
+    $obj->longi = &arr[2];
+    $obj->avrat = &arr[3];
+    $obj->review = &arr[4];
+    $obj->noofrate = &arr[5];
+    $obj->noofacc = &arr[6];
+    return $obj;
   }
   
 $lat = $_GET['lat'];
