@@ -11,12 +11,12 @@
     $noofacc = $_GET['noofacc'];
 
     $con=mysqli_connect("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
-    //$sql = "insert into vivasa values($kind,$lat,$longi,$avrat,$review,$noofrat,$noofacc);";
+    $sql = "insert into vivasa values($kind,$lat,$longi,$avrat,'$review',$noofrat,$noofacc);";
 	
 	$a = "ooo";
 	
 	//The following works
-	$sql = "insert into vivasa values($kind,$kind,4,5,'$review',4,3);";
+	//$sql = "insert into vivasa values($kind,$kind,4,5,'$review',4,3);";
 	
 	$sql2 = "select count(*) from vivasa;";
 		//dawdwa
@@ -38,7 +38,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '3';
+	echo '1';
 	echo $review;
 	mysqli_close($con);
 	echo gettype($kind);
