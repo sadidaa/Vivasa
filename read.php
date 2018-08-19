@@ -16,13 +16,13 @@ class entity{
   function convert(&arr)
   {
     $obj = new entity();
-    $obj->kind = &arr[0];
-    $obj->lat = &arr[1];
-    $obj->longi = &arr[2];
-    $obj->avrat = &arr[3];
-    $obj->review = &arr[4];
-    $obj->noofrate = &arr[5];
-    $obj->noofacc = &arr[6];
+    $obj->kind = $arr[0];
+    $obj->lat = $arr[1];
+    $obj->longi = $arr[2];
+    $obj->avrat = $arr[3];
+    $obj->review = $arr[4];
+    $obj->noofrate = $arr[5];
+    $obj->noofacc = $arr[6];
     return $obj;
   }
   
