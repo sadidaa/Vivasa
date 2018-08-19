@@ -11,10 +11,10 @@ class entity{
   public $noofrate = 0;
   public $review = "";
 }
-  function convert(arr)
+  /*function convert(arr)
   {
   }
-  
+  */
 $lat = $_GET['lat'];
 $longi = $_GET['longi'];
 
@@ -24,12 +24,12 @@ $obj = new entity();
   $sql = "select * from vivasa";
   $sql2 = "select count(*) from vivasa";
   
-  $temp = mysqli_query($con,$sql2);
+  /*$temp = mysqli_query($con,$sql2);
   $counta = mysqli_fetch_row($temp);
   $count = $counta[0];
   
   	$out = mysqli_query($con,$sql);
-  	$row = mysqli_fetch_row($out);
+  	$row = mysqli_fetch_row($out);*/
   
   
   
