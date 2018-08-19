@@ -41,14 +41,19 @@ $obj = new entity();
   	$out = mysqli_query($con,$sql);
   	//$row = mysqli_fetch_row($out);
   
+  /*
     while($x = mysqli_fetch_array($out, MYSQL_ASSOC)) {
      //$obj = convert($x);
       //echo json_encode($obj);
     echo $x[0][0];
-    }
+    }*/
+  
+  $y = mysqli_fetch_array($out);
+  $r = mysqli_fetch_array($($y[0]));
+  echo $r[0];
   
   //echo json_encode($obj);
-echo "3";
+echo "2";
   echo $count;
 
 
