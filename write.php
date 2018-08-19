@@ -40,8 +40,7 @@
 	echo '1';
 	echo $review;
 	mysqli_close($con);
-	echo $a;
-	echo "$a";
+	echo string gettype($kind);
 ?>
 
 </body>
