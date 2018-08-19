@@ -47,11 +47,11 @@ $obj = new entity();
       //echo json_encode($obj);
     echo $x[0][0];
     }*/
-  
+  /*
   $y = mysqli_fetch_array($out);
   $r = mysqli_fetch_array($($y[0]));
   echo $r;
-  
+  */
   //echo json_encode($obj);
 echo "2";
   echo $count;
