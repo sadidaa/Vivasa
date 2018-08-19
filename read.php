@@ -13,10 +13,19 @@ class entity{
   
   
 }
-  /*function convert(arr)
+  function convert(arr)
   {
+    $obj = new entity();
+    obj->kind = arr[0];
+    obj->lat = arr[1];
+    obj->longi = arr[2];
+    obj->avrat = arr[3];
+    obj->review = arr[4];
+    obj->noofrate = arr[5];
+    obj->boofacc = arr[6];
+    return obj;
   }
-  */
+  
 $lat = $_GET['lat'];
 $longi = $_GET['longi'];
 
@@ -33,12 +42,15 @@ $obj = new entity();
   	$out = mysqli_query($con,$sql);
   	$row = mysqli_fetch_row($out);
   
+  for($x = 0;$x < $count;$x++)
+  {
+   obj = convert(row[$x]);
+  echo json_encode($obj),"\n";
+  }
   
-  
-  
-  echo json_encode($obj);
-echo "1";
-  echo $count;
+  //echo json_encode($obj);
+echo "2";
+  //echo $count;
 
 
 ?>
