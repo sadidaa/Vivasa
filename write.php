@@ -38,7 +38,7 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '1';
+	echo '3';
 	echo $review;
 	mysqli_close($con);
 	echo gettype($kind);
