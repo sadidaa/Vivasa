@@ -47,7 +47,7 @@ $obj = new entity();
    }
   
   //echo json_encode($obj);
-echo "2";
+echo "1";
   //echo $count;
 
 
