@@ -15,13 +15,13 @@ class entity{
   function convert($arr)
   {
     $obj = new entity();
-    $obj->kind = $arr['kind'];
-    $obj->lat = $arr['lat'];
-    $obj->longi = $arr['longi'];
-    $obj->avrat = $arr['avrat'];
-    $obj->review = $arr['review'];
-    $obj->noofrate = $arr['noofrating'];
-    $obj->noofacc = $arr['no.of.acc'];
+    $obj->kind = {$arr['kind']};
+    $obj->lat = {$arr['lat']};
+    $obj->longi = {$arr['longi']};
+    $obj->avrat = {$arr['avrat']};
+    $obj->review = {$arr['review']};
+    $obj->noofrate = {$arr['noofrating']};
+    $obj->noofacc = {$arr['no.of.acc']};
     return $obj;
   }
   
