@@ -42,12 +42,13 @@ $obj = new entity();
   	//$row = mysqli_fetch_row($out);
   
     while($x = mysql_fetch_array($out, MYSQL_ASSOC)) {
-     $obj = convert($x);
-      echo json_encode($obj);
-   }
+     //$obj = convert($x);
+      //echo json_encode($obj);
+    echo {$x['kind']};
+    }
   
   //echo json_encode($obj);
-echo "1";
+echo "2";
   echo $count;
 
 
