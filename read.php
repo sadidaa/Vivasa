@@ -57,10 +57,6 @@ $obj = new entity();
   echo $r;
   */
   //echo json_encode($obj);
-echo "1";
-  echo $count;
-
-
 ?>
 </body>
 </html>
