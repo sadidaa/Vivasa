@@ -13,7 +13,7 @@ class entity{
   
   
 }
-  function convert(&arr)
+  function convert($arr)
   {
     $obj = new entity();
     $obj->kind = $arr[0];
@@ -44,7 +44,7 @@ $obj = new entity();
   
   for($x = 0;$x < $count;$x++)
   {
-   obj = convert(row[$x]);
+   $obj = convert(row[$x]);
   echo json_encode($obj),"\n";
   }
   
