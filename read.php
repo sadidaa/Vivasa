@@ -31,7 +31,7 @@ $longi = $_GET['longi'];
 $obj = new entity();
   
  $con=mysqli_connect("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
-  $sql = "select * from vivasa";
+  $sql = "select * from vivasa where lat = 2";
   $sql2 = "select count(*) from vivasa;";
   
   $temp = mysqli_query($con,$sql2);
@@ -42,13 +42,14 @@ $obj = new entity();
   	$row = mysqli_fetch_row($out);
   
   for($x = 0;$x < $count;$x++)
-  {
+  {/*
    $obj = convert($row[][$x]);
-  echo json_encode($obj),"\n";
+  echo json_encode($obj),"\n";*/
+    echo $row[$x];
   }
   
   //echo json_encode($obj);
-echo "1";
+echo "2";
   //echo $count;
 
 
