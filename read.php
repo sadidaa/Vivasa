@@ -40,7 +40,7 @@ $obj = new entity();
   
   	$out = mysqli_query($con,$sql);
   	$row = mysqli_fetch_row($out[2]);
-  echo $row[4];
+  echo $out;
   
   /*
     while($x = mysqli_fetch_array($out, MYSQL_ASSOC)) {
