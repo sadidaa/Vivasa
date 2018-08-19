@@ -39,7 +39,7 @@ $obj = new entity();
   $count = $counta[0];
   
   	$out = mysqli_query($con,$sql);
-  	$row = mysqli_fetch_row($out[2]);
+  	$row = mysqli_fetch_row($out);
   echo $out;
   
   /*
