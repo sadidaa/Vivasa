@@ -39,8 +39,8 @@ $obj = new entity();
   $count = $counta[0];
   
   	$out = mysqli_query($con,$sql);
-  	$row = mysqli_fetch_row($out);
-  echo $row[8];
+  	$row = mysqli_fetch_row($out[2]);
+  echo $row[4];
   
   /*
     while($x = mysqli_fetch_array($out, MYSQL_ASSOC)) {
@@ -54,7 +54,7 @@ $obj = new entity();
   echo $r;
   */
   //echo json_encode($obj);
-echo "3";
+echo "1";
   echo $count;
 
 
