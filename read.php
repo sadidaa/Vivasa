@@ -44,7 +44,7 @@ $obj = new entity();
     while($x = mysql_fetch_array($out, MYSQL_ASSOC)) {
      //$obj = convert($x);
       //echo json_encode($obj);
-    echo $x['kind'];
+    echo $x;
     }
   
   //echo json_encode($obj);
