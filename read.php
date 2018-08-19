@@ -44,11 +44,11 @@ $obj = new entity();
     while($x = mysqli_fetch_array($out, MYSQL_ASSOC)) {
      //$obj = convert($x);
       //echo json_encode($obj);
-    echo $x[0];
+    echo $x[0][0];
     }
   
   //echo json_encode($obj);
-echo "4";
+echo "3";
   echo $count;
 
 
