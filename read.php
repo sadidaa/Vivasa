@@ -12,18 +12,18 @@ class entity{
   public $noofacc = 0;
 }
   
- /* function convert($arr)
+ function convert($arr)
   {
     $obj = new entity();
-    $obj->kind = {$arr['kind']};
-    $obj->lat = {$arr['lat']};
-    $obj->longi = {$arr['longi']};
-    $obj->avrat = {$arr['avrat']};
-    $obj->review = {$arr['review']};
-    $obj->noofrate = {$arr['noofrating']};
-    $obj->noofacc = {$arr['no.of.acc']};
+    $obj->kind = $arr[0];
+    $obj->lat = $arr[1];
+    $obj->longi = $arr[2];
+    $obj->avrat = $arr[3];
+    $obj->review = $arr[4];
+    $obj->noofrate = $arr[5];
+    $obj->noofacc = $arr[6];
     return $obj;
-  }*/
+  }
   
 $lat = $_GET['lat'];
 $longi = $_GET['longi'];
@@ -47,9 +47,9 @@ $obj = new entity();
   
   
     while($x = mysqli_fetch_array($out)) {
-     //$obj = convert($x);
-      //echo json_encode($obj);
-    echo $x[4];
+     $obj = convert($x);
+      echo json_encode($obj);
+    //echo $x[4];
     }
   /*
   $y = mysqli_fetch_array($out);
@@ -57,7 +57,7 @@ $obj = new entity();
   echo $r;
   */
   //echo json_encode($obj);
-echo "5";
+echo "1";
   echo $count;
 
 
