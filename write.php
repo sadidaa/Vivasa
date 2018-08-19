@@ -37,10 +37,10 @@
     //echo $lat;
 
    // echo "Wrote to database \n\n";*/
-	echo '1';
+	echo '2';
 	echo $review;
 	mysqli_close($con);
-	echo string gettype($kind);
+	echo gettype($kind);
 ?>
 
 </body>
