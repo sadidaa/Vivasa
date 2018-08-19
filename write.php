@@ -12,6 +12,7 @@
 
     $con=mysqli_connect("den1.mysql2.gear.host","vivasa","Se9kZQ-_GnnF","vivasa");
     $sql = "insert into vivasa values($kind,$lat,$longi,$avrat,$review,$noofrat,$noofacc);";
+	
 	$a = "ooo";
 	
 	//The following works
